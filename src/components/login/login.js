@@ -21,7 +21,7 @@ const Login = ( { setLoginUser }) => {
             })
         }
         const Login = () => {
-            axios.post("https://nabackend.vercel.app/", user)
+            axios.post("https://vercel.com/omnarayansingh/nabackend", user)
             .then(res => {
                 alert(res.data.message)
                 setLoginUser(res.data.user)
