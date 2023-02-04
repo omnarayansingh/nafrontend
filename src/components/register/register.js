@@ -25,7 +25,7 @@ const Register = () => {
       const register = () => {
             const { name, email, password, reEnterPassword } = user
             if( name && email && password && (password === reEnterPassword)){
-                  axios.post("https://vercel.com/omnarayansingh/nabackend/register", user)
+                  axios.post("https://nabackend-omnarayansingh.vercel.app/register", user)
                   .then(res => {
                         alert(res.data.message)
                         history("/login")
